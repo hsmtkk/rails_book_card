@@ -31,7 +31,7 @@ class CardsController < ApplicationController
 
   private
   def card_params
-    params.requrire(:card).permit(:title, :author, :price, :publisher, :memo)
+    params.require(:card).permit(:title, :author, :price, :publisher, :memo)
   end
 
   def goback
